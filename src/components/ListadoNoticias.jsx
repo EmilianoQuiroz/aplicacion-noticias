@@ -24,7 +24,10 @@ const ListadoNoticias = () => {
         </Typography>
 
         {/** Grid contenedor de noticias */}
-        <Grid>
+        <Grid
+            container
+            spacing={2}
+        >
             {/** Iteracion de las noticias */}
             {noticias.map(noticia => (
                 <Noticia 
