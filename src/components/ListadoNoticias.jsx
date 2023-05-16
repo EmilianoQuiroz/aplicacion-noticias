@@ -1,6 +1,8 @@
 // Importamos los componentes de Material UI
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
+import Pagination from '@mui/material/Pagination'
+import Stack from '@mui/material/Stack'
 import useNoticias from '../hooks/useNoticias'
 // Importamos el componente noticia
 import Noticia from './Noticia'
@@ -36,6 +38,23 @@ const ListadoNoticias = () => {
                 />
             ))}
         </Grid>
+
+        {/** Mostramos el paginador */}
+        <Stack 
+            sx={{
+                marginY: 5
+            }}
+            spacing={2}
+            direction={'row'}
+            justifyContent='center'
+            alignItems='center'
+        >
+          <Pagination 
+            count={3} 
+            color="primary" 
+        />
+        </Stack>
+
     </>
   )
 }
