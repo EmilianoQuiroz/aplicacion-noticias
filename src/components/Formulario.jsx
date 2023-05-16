@@ -1,6 +1,8 @@
 import React from 'react'
 // Importamos los componentes de Material UI
 import { FormControl, InputLabel, Select, MenuItem, Button, Box} from '@mui/material'
+// Importamos el hook
+import useNoticias from '../hooks/useNoticias'
 
 // Categorias de noticias (Son todas las que soporta la API)
 const CATEGORIAS = [
@@ -14,6 +16,9 @@ const CATEGORIAS = [
 ]
 
 const Formulario = () => {
+
+    // Extraemos la categoria y el handle
+    const { categoria, handleChangeCategoria } = useNoticias()
   return (
     <form>
         {/**
@@ -23,6 +28,8 @@ const Formulario = () => {
             <InputLabel> Categoría </InputLabel>
             <Select
                 label="Categoría"
+                onChange={handleChangeCategoria}
+                value={categoria}
             >
                 {CATEGORIAS.map(categoria => (
                     <MenuItem 
