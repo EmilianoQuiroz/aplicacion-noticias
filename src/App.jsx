@@ -1,5 +1,7 @@
 // Importamos componentes de MUI
 import {Container, Grid, Typography} from '@mui/material';
+// Importamos los componentes que se van a mostrar
+import Formulario from './components/Formulario';
 
 function App() {
 
@@ -21,6 +23,18 @@ function App() {
           Buscador de Noticias
         </Typography>
       </header>
+      
+      <Grid
+        container
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Grid item xs={12} md={6} lg={4}>
+          <Formulario />
+        </Grid>
+      </Grid>
+
     </Container>
   )
 }
