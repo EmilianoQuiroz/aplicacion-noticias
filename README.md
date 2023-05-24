@@ -1,10 +1,25 @@
 # aplicacion-noticias
 Aplicacion de noticias React, Vite, Material UI y News Api
 
-## Deploy:
+## Instalacion en local:
+- Clonar el repositorio
+    
+      git clone https://github.com/EmilianoQuiroz/aplicacion-noticias.git
 
-https://glowing-piroshki-2b46c7.netlify.app
+- Moverse a la carpeta en la que se encuentra el proyecto:
 
-## Instalacion:
+      cd /aplicacion-presupuestos
+      
+- Instalar dependencias: 
 
-## Desktop:
+      npm install
+  
+- Levantar el proyecto:
+
+      npm run dev
+      
+## Deploy del proyecto:
+
+
+
+### Desktop:
