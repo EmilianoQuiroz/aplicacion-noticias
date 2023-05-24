@@ -8,7 +8,7 @@ Aplicacion de noticias React, Vite, Material UI y News Api
 
 - Moverse a la carpeta en la que se encuentra el proyecto:
 
-      cd /aplicacion-presupuestos
+      cd /aplicacion-noticias
       
 - Instalar dependencias: 
 
